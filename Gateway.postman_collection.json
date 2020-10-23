@@ -1,0 +1,628 @@
+{
+	"info": {
+		"_postman_id": "b9a6e6ee-f3b4-4763-89e5-01d5ee3e3709",
+		"name": "Gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get User Information",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4a9a1c00-4128-496f-8e4c-102a4c762b76",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var schema = {\r",
+							"  \"errors\": {\r",
+							"    \"type\": \"array\"\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"var data1 = [];\r",
+							"\r",
+							"pm.test('Schema is valid', function() {\r",
+							"  pm.expect(tv4.validate(data1, schema)).to.be.true;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pg-gateway-dev.np.dayforcehcm.com/api/account/v1/userinformation",
+					"protocol": "https",
+					"host": [
+						"pg-gateway-dev",
+						"np",
+						"dayforcehcm",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v1",
+						"userinformation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Bank Accounts Info v1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "302c41bb-0cef-4387-9c58-11bbee004a27",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var schema = {\r",
+							"  \"errors\": {\r",
+							"    \"type\": \"array\"\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"var data1 = [];\r",
+							"\r",
+							"pm.test('Schema is valid', function() {\r",
+							"  pm.expect(tv4.validate(data1, schema)).to.be.true;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pg-gateway-dev.np.dayforcehcm.com/api/account/v1/bankaccountsinformation",
+					"protocol": "https",
+					"host": [
+						"pg-gateway-dev",
+						"np",
+						"dayforcehcm",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v1",
+						"bankaccountsinformation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Bank Accounts Info v2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2473a6a7-052b-4372-a7a0-bc4e8bb8d9ee",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var schema = {\r",
+							"  \"errors\": {\r",
+							"    \"type\": \"array\"\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"var data1 = [];\r",
+							"\r",
+							"pm.test('Schema is valid', function() {\r",
+							"  pm.expect(tv4.validate(data1, schema)).to.be.true;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pg-gateway-dev.np.dayforcehcm.com/api/account/v2/bankaccountsinformation",
+					"protocol": "https",
+					"host": [
+						"pg-gateway-dev",
+						"np",
+						"dayforcehcm",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v2",
+						"bankaccountsinformation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Bank Accounts Info v3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "39792a74-4882-4ef8-add2-e25306571e4f",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var schema = {\r",
+							"  \"errors\": {\r",
+							"    \"type\": \"array\"\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"var data1 = [];\r",
+							"\r",
+							"pm.test('Schema is valid', function() {\r",
+							"  pm.expect(tv4.validate(data1, schema)).to.be.true;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pg-gateway-dev.np.dayforcehcm.com/api/account/v3/bankaccountsinformation",
+					"protocol": "https",
+					"host": [
+						"pg-gateway-dev",
+						"np",
+						"dayforcehcm",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v3",
+						"bankaccountsinformation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Legal",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6cce6bb3-8ca4-459f-9c07-f557d9ea38cf",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var schema = {\r",
+							"  \"errors\": {\r",
+							"    \"type\": \"array\"\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"var data1 = [];\r",
+							"\r",
+							"pm.test('Schema is valid', function() {\r",
+							"  pm.expect(tv4.validate(data1, schema)).to.be.true;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pg-gateway-dev.np.dayforcehcm.com/api/account/v1/getlegal",
+					"protocol": "https",
+					"host": [
+						"pg-gateway-dev",
+						"np",
+						"dayforcehcm",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v1",
+						"getlegal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Config",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "60959713-3ca5-4778-8a2e-b05a42ff818b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var schema = {\r",
+							"  \"errors\": {\r",
+							"    \"type\": \"array\"\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"var data1 = [];\r",
+							"\r",
+							"pm.test('Schema is valid', function() {\r",
+							"  pm.expect(tv4.validate(data1, schema)).to.be.true;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pg-gateway-dev.np.dayforcehcm.com/api/account/v1/getconfig",
+					"protocol": "https",
+					"host": [
+						"pg-gateway-dev",
+						"np",
+						"dayforcehcm",
+						"com"
+					],
+					"path": [
+						"api",
+						"account",
+						"v1",
+						"getconfig"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health Checks",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "44ff7c1b-398e-46e8-a1b2-245c03565ff7",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var schema = {\r",
+							"  \"errors\": {\r",
+							"    \"type\": \"array\"\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"var data1 = [];\r",
+							"\r",
+							"pm.test('Schema is valid', function() {\r",
+							"  pm.expect(tv4.validate(data1, schema)).to.be.true;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pg-gateway-dev.np.dayforcehcm.com/api/utility/v1/healthchecks",
+					"protocol": "https",
+					"host": [
+						"pg-gateway-dev",
+						"np",
+						"dayforcehcm",
+						"com"
+					],
+					"path": [
+						"api",
+						"utility",
+						"v1",
+						"healthchecks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Atm Locations",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "79573539-9291-425b-946a-209b58bc85f6",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var schema = {\r",
+							"  \"errors\": {\r",
+							"    \"type\": \"array\"\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"var data1 = [];\r",
+							"\r",
+							"pm.test('Schema is valid', function() {\r",
+							"  pm.expect(tv4.validate(data1, schema)).to.be.true;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pg-gateway-dev.np.dayforcehcm.com/api/utility/v1/getatmlocations?Latitude=1&Longitude=1&Distance=1&Limit=1",
+					"protocol": "https",
+					"host": [
+						"pg-gateway-dev",
+						"np",
+						"dayforcehcm",
+						"com"
+					],
+					"path": [
+						"api",
+						"utility",
+						"v1",
+						"getatmlocations"
+					],
+					"query": [
+						{
+							"key": "Latitude",
+							"value": "1"
+						},
+						{
+							"key": "Longitude",
+							"value": "1"
+						},
+						{
+							"key": "Distance",
+							"value": "1"
+						},
+						{
+							"key": "Limit",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Help and support",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7753a615-5274-4393-8659-eaf34fc9527f",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var schema = {\r",
+							"  \"errors\": {\r",
+							"    \"type\": \"array\"\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"var data1 = [];\r",
+							"\r",
+							"pm.test('Schema is valid', function() {\r",
+							"  pm.expect(tv4.validate(data1, schema)).to.be.true;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pg-gateway-dev.np.dayforcehcm.com/api/utility/v1/helpandsupport",
+					"protocol": "https",
+					"host": [
+						"pg-gateway-dev",
+						"np",
+						"dayforcehcm",
+						"com"
+					],
+					"path": [
+						"api",
+						"utility",
+						"v1",
+						"helpandsupport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check app version",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bf8cbe80-99d7-42c9-8fdd-5f4697b11867",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var schema = {\r",
+							"  \"errors\": {\r",
+							"    \"type\": \"array\"\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"var data1 = [];\r",
+							"\r",
+							"pm.test('Schema is valid', function() {\r",
+							"  pm.expect(tv4.validate(data1, schema)).to.be.true;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"deviceId\": 0,\r\n  \"appVersion\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pg-gateway-dev.np.dayforcehcm.com/api/utility/v1/checkappversion",
+					"protocol": "https",
+					"host": [
+						"pg-gateway-dev",
+						"np",
+						"dayforcehcm",
+						"com"
+					],
+					"path": [
+						"api",
+						"utility",
+						"v1",
+						"checkappversion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit wallet answers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "93e11715-addd-471a-a2fc-09c96840fe16",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var schema = {\r",
+							"  \"errors\": {\r",
+							"    \"type\": \"array\"\r",
+							"  }\r",
+							"};\r",
+							"\r",
+							"var data1 = [];\r",
+							"\r",
+							"pm.test('Schema is valid', function() {\r",
+							"  pm.expect(tv4.validate(data1, schema)).to.be.true;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"oowAnswers\": [\r\n    {\r\n      \"questionId\": 0,\r\n      \"answerId\": 0\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pg-gateway-dev.np.dayforcehcm.com/api/upgrade/v1/submitoutofwalletanswers",
+					"protocol": "https",
+					"host": [
+						"pg-gateway-dev",
+						"np",
+						"dayforcehcm",
+						"com"
+					],
+					"path": [
+						"api",
+						"upgrade",
+						"v1",
+						"submitoutofwalletanswers"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjZDQzVENzU1NUY2NzgxNzc1NTlDQTJEM0YxRjNEQjRENThERkExNDkiLCJ0eXAiOiJhdCtqd3QiLCJ4NXQiOiJiTVhYVlY5bmdYZFZuS0xUOGZQYlRWamZvVWsifQ.eyJuYmYiOjE2MDM0Njc4NjksImV4cCI6MTYwMzQ2OTY2OSwiaXNzIjoiaHR0cHM6Ly9kZmlkcWEubnAuZGF5Zm9yY2VoY20uY29tIiwiYXVkIjpbImRmLmdhdGV3YXkiLCJkZi5pZGVudGl0eS5hZG1pbmFwaSIsImRmLndhbGxldCIsImh0dHBzOi8vZGZpZHFhLm5wLmRheWZvcmNlaGNtLmNvbS9yZXNvdXJjZXMiXSwiY2xpZW50X2lkIjoiRGF5Zm9yY2UuV2FsbGV0Iiwic3ViIjoiYWEyZDc3NWItMTQ1Zi00OTUyLTliNWUtMmJlYmM2NDBmNmQxIiwiYXV0aF90aW1lIjoxNjAzNDY3ODY5LCJpZHAiOiJ3YWxsZXQiLCJlbWFpbF92ZXJpZmllZCI6IkNvZGVFeHBpcmVkIiwiZGYud2FsbGV0LnNlY3JldF9xdWVzdGlvbnNfY29tcGxldGUiOiJQZW5kaW5nIiwicGhvbmVfbnVtYmVyX3ZlcmlmaWVkIjoiZmFsc2UiLCJkZi53YWxsZXQucGFzc3dvcmRfcmVzZXRfcmVxdWlyZWQiOiJmYWxzZSIsInBob25lX251bWJlcl92ZXJpZmljYXRpb25fc3RhdHVzIjoidW52ZXJpZmllZFBob25lIiwianRpIjoidW9oeHJsNktBLWJULXZUSVh2MUNmdyIsInNjb3BlIjpbIm9wZW5pZCIsInByb2ZpbGUiLCJkZi5nYXRld2F5IiwiZGYuaWRlbnRpdHkuYWRtaW5hcGkiLCJkZi53YWxsZXQiLCJvZmZsaW5lX2FjY2VzcyJdLCJhbXIiOlsicGFzc3dvcmQiXX0.iU0iW04Tg6xg-6ezVJYSYVmzzO2holXTjV-tFgiASFNUXXyNB9g-UBiRZ_f4gMZHyCTqbgyssGNomxJxA2beBAACN_sJDxkSAxhziOOU-pC6xBiYw1QZ_QqQk9cXzB5UzPRotQSMQi6sO3L318jv18oR0-10_RuVKGbGSRh-KZYEPD4FgYE9exI0AwOZACwUs9XcaUP-1jECDvOuH3VND3E5sugGkALvXgU15QXKd9NmnUzuIN6TDUrkuRT5lZ3Ad57CYoZGidB2j_0XD8Ee2-w6L1WDkBp54yb_FHpOt3UgNGj4NjSdHSF6JUTr7LqHbC2A8_jUKBCoWm-0DOmDiQ",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1cbad8b5-9060-4797-8ff3-32eb04998c9b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "19c5f944-049b-4192-95c1-537a3aa51722",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
